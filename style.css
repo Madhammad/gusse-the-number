@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: rgba(128, 128, 128, 0.286); */
+  background-image: url("https://media.proprofs.com/images/QM/user_images/2290773/1531093844.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* width: 600px; */
+  position: relative;
+}
+#startGame {
+  background: rgba(177, 179, 191, 0.911);
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  row-gap: 65px;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 10px;
+}
+#newGamebtn{
+    cursor: pointer;
+}
+#startGame.hide {
+  visibility: hidden;
+}
+#StartBtn {
+  padding: 5px;
+}
+#startGame p {
+  color: rgb(191, 38, 38);
+  font-weight: 900;
+}
+.gamebox {
+  background-color: rgba(191, 38, 38);
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.299);
+}
+
+.h2 {
+  color: rgb(234, 228, 228);
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: rgba(243, 241, 241, 0.18);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.299);
+}
+
+input {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.408);
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 5px;
+}
+
+#startover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#previousnb {
+  background-color: rgba(191, 38, 38, 0.504);
+  color: rgb(237, 242, 236);
+  /* padding: 5px; */
+}
+
+#submitte {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 2px;
+}
+#submitte:hover {
+  background-color: rgba(191, 38, 38, 0.504);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.408);
+  color: #fff;
+}
+#hint {
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.314);
+  padding: 5px 10px;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#hint.disable {
+  background: transparent;
+}
+body {
+  position: relative;
+}
+.hintcomment {
+  width: 200px;
+  /* height: 100px; */
+  background: rgba(114, 3, 3, 0.355);
+  padding: 10px;
+  position: absolute;
+  top: 370px;
+  right: 370px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  visibility: hidden;
+}
+.hintcomment.show {
+  visibility: visible;
+}
